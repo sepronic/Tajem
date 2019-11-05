@@ -1,0 +1,411 @@
+* 
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+body
+    max-width: 1600px
+header
+    height: 670px
+    width: 100vw
+    background: url('../page images/header menu/background.png')
+    background-size: cover
+.button_style
+    width: 120px 
+    height: 40px
+    border: 1px solid #00E0D0
+    padding: 10px
+    text-align: center
+    margin-top: 53px
+    margin-bottom: 75px
+    cursor: pointer
+    a
+        text-decoration: none
+        font-family: 'Hammersmith One'
+        font-size: 16px
+        display: block
+        text-transform: uppercase
+        color: #00E0D0
+.menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 50px
+    height: 200px
+    &__list
+        display: flex
+        align-items: center
+        list-style: none
+        a
+            color: #FFFFFF
+            text-decoration: none
+            display: block
+            font-family: 'Hammersmith One'
+            font-size: 16px
+            margin: 10px 25px
+            text-transform: uppercase
+            &:hover
+                color: #00E0D0
+.home
+    height: 470px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: #FFFFFF
+    &__heading
+        font-family: 'PlayfairDisplay Black'
+        color: #FFFFFF
+    &__text
+        font-family: 'Roboto Light'
+        font-size: 14px
+        text-align: center
+        max-width: 55%
+    &__separator
+        margin-top: 20px
+        margin-bottom: 27px      
+.about
+    height: 430px
+    width: 100vw
+    margin: 0 auto
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    &__logo
+        width: 30vw
+    &__text
+        height: 260px
+        width: 40vw
+    h2
+        color: #413D4B
+        margin-bottom: 20px
+        font-family: 'PlayfairDisplay Bold'
+        font-size: 24px
+    p
+        margin-top: 30px
+        color: #B9B8BC
+        font-family: 'Roboto Light'
+        font-size: 14px
+.video
+    height: 550px
+    background: url('../page images/About/about_video/background.png')
+    background-size: cover
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &__button
+        padding: 35px
+        cursor: pointer
+    &__text
+        color: #FFFFFF
+        text-transform: uppercase
+        font-family: 'Roboto Black'
+        font-size: 16px
+.expertise
+    height: 755px
+    width: 80vw
+    margin: 0 auto
+    display: block
+    text-align: center
+    &__heading
+        color: #413D4B
+        margin-top: 90px
+        font-family: 'PlayfairDisplay Bold'
+        font-size: 18px
+    &__text
+        color: #8E8D90
+        margin: 10px
+        font-family: 'Playfair Display'
+        font-size: 14px
+    &__separator
+        padding-bottom: 30px
+    &__container
+        width: 100%
+        margin-top: 40px
+        padding-top: 30px
+        display: flex
+        flex-flow: row wrap
+        justify-content: center
+        align-items: center
+        &--item
+            width: 33%
+            height: 240px
+            padding: 30px
+            align-self: center
+            margin: 0.2px
+        &--item:nth-of-type(1)
+            border-right: 0.2px solid #C8C8C8
+            border-bottom: 0.3px solid #C8C8C8 
+        &--item:nth-of-type(2)
+            border-right: 0.2px solid #C8C8C8
+            border-bottom: 0.2px solid #C8C8C8 
+        &--item:nth-of-type(3)
+            border-bottom: 0.2px solid #C8C8C8
+        &--item:nth-of-type(4)
+            border-right: 0.2px solid #C8C8C8
+        &--item:nth-of-type(6)
+            border-left: 0.2px solid #C8C8C8
+        h4
+            color: #413D4B
+            margin-top: 20px
+            font-family: 'Roboto Black'
+            font-size: 14px
+        p
+            color: #C8C8C8
+            margin: 15px
+            font-family: 'Roboto Light'
+            font-size: 15px
+.team
+    height: 715px
+    background: url('../page images/Team/background.png')
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    color: #FFFFFF
+    &__heading
+        font-family: 'PlayfairDisplay Bold'
+        font-size: 22px
+        margin-top: 72px
+    &__text
+        font-family: 'Playfair Display'
+        font-size: 14px
+        margin: 10px
+    &__separator
+        margin: 25px
+    &__container
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        margin-top: 50px
+    &__item
+        border: 1px solid #FFFFFF
+        margin-left: 20px
+        margin-right: 20px
+        margin-bottom: 30px
+        padding-bottom: 15px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        img 
+            height: 100%
+            width: 100%
+    &__button
+        width: 140px
+        margin-top: 30px
+    h3 
+        font-family: 'Roboto Black'
+        font-size: 14px
+    span
+        margin-top: 30px
+        font-family: 'Roboto Light'
+        font-size: 13px
+.gallery
+    width: 100vw
+    height: 740px
+    display: block
+    text-align: center
+    padding-top: 50px
+    padding-bottom: 40px
+    &__heading
+        width: 80vw
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 0 auto
+    &__heading>a 
+        font-family: 'Roboto Light'
+        font-size: 14px
+        text-decoration: none
+        color: #66636D    
+    h2
+        font-family: 'PlayfairDisplay Bold'
+        font-size: 22px
+        text-transform: uppercase
+        color: #413D4B
+        margin: 70px
+    &__item
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        img 
+            width: 16%
+            height: 150px
+    &__button
+        margin-top: 70px
+        margin-bottom: 70px
+.opinions
+    width: 100vw
+    height: 500px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: url('../page images/Opinions/background.png')
+    background-size: cover
+    color: #FFFFFF
+    &__quote
+        margin-bottom: 30px
+    &__text
+        width: 55vw
+        font-family: 'Playfair Display'
+        font-size: 16px
+        padding-bottom: 10px
+        text-align: center
+    &__personality
+        padding: 25px
+        h4
+            font-family: 'Roboto Black'
+            font-size: 14px
+        p 
+            font-family: 'Roboto Light'
+            font-size: 13px
+    &__slider
+        display: flex
+        align-items: center
+        justify-items: space-around
+        padding-top: 25px
+        img 
+            padding: 5px
+.container 
+    height: 655px
+    width: 80vw
+    display: flex
+    align-items: center
+    justify-items: center
+    margin: 0 auto
+.feedback
+    width: 40vw
+    display: flex
+    flex-direction: column
+    margin-right: 100px
+    &__heading
+        font-family: 'PlayfairDisplay Bold'
+        font-size: 22px
+        color: #413D4B
+        margin: 10px
+        padding: 10px
+    input
+        color: #E5E5E5
+        width: 100%
+        margin: 10px
+        padding: 10px
+        border: 0.5px solid #E5E5E5
+    textarea
+        border: 0.5px solid #E5E5E5
+        color: #E5E5E5
+        width: 100%
+        margin: 10px
+        padding: 10px
+    &__button
+        display: block
+        background-color: transparent
+        margin: 10px
+        padding: 10px
+        color: #00E0D0
+        width: 120px 
+        height: 40px
+        border: 1px solid #00E0D0
+        text-align: center
+        margin-top: 23px
+        margin-bottom: 75px
+        cursor: pointer
+        font-family: 'Hammersmith One'
+        font-size: 16px
+        text-transform: uppercase
+.clients
+    width: 42vw 
+    margin-top: 10px 
+    &__heading
+        font-family: 'PlayfairDisplay Bold'
+        font-size: 22px
+        color: #413D4B
+        width: 100%
+    h2 
+        margin-bottom: 30px
+        margin-top: -50px
+    &__gallery
+        padding-top: 15px
+        padding-bottom: 15px
+        display: inline-flex
+        flex-flow: row wrap
+        &--item
+            width: 170px
+            height: 80px
+.contact
+    height: 400px
+    width: 100vw
+    display: flex
+    align-items: center
+    justify-items: center
+    background: url('../page images/Footer/background.png')
+    background-size: cover
+    color: #FFFFFF
+    &__text
+        display: flex
+        flex-direction: column
+        width: 30%
+        margin: 10px
+        padding: 10px
+        img
+            width: 130px
+        ul 
+            display: flex
+            flex-direction: row
+            list-style: none
+            font-family: 'Roboto Light'
+            font-size: 14px
+            text-transform: uppercase
+    &__information
+        display: flex
+        flex-direction: column
+        width: 30%
+        margin: 10px
+        padding: 10px
+        img 
+            width: 17px
+    &__subscription
+        width: 30%
+        margin: 10px
+        padding: 10px
+        input 
+            background: transparent
+            border: 1px solid #9D97AF
+            color: #9D97AF
+            width: 210px
+            height: 45px
+            font-family: 'Roboto Light'
+            font-size: 14px
+            text-align: center
+
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+
+            
+
+
+
+
