@@ -4,11 +4,62 @@
     box-sizing: border-box
 body
     max-width: 1600px
-header
-    height: 670px
-    width: 100vw
-    background: url('../page images/header menu/background.png')
-    background-size: cover
+    margin: 0 auto 
+.slider 
+    position: relative
+    &__item
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 670px
+        width: 100%
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        color: #FFFFFF
+        text-align: center
+        img
+            margin: 0 auto
+.heading, .text
+    margin-top: 40px
+.heading 
+    font-family: 'PlayfairDisplay Black'
+    color: #FFFFFF
+.separator 
+    margin-top: 20px
+    margin-bottom: 27px 
+.text
+    width: 60%
+    font-family: 'Roboto Light'
+    font-size: 14px
+    margin: 0 auto
+    margin-top: 30px
+    text-align: center
+.slick-dots 
+    display: flex
+    justify-content: center
+    position: absolute
+    top: 580px
+    left: 45%
+    right: 45%
+    z-index: 1
+    li
+        padding: 5px
+        list-style: none
+        button 
+            border-radius: 50%
+            border: 1px solid white
+            background: transparent
+            outline: none
+            font-size: 0
+            width: 10px
+            height: 10px
+            cursor: pointer
+            &:hover
+                background: #00E0D0
+.header__button
+    margin: 0 auto
+    margin-top: 90px
 .button_style
     width: 120px 
     height: 40px
@@ -30,12 +81,15 @@ header
     align-items: center
     justify-content: space-between
     padding: 50px
+    margin: 0 auto
     height: 200px
+    width: 100%
     &__list
         display: flex
         align-items: center
         list-style: none
         a
+            outline: none
             color: #FFFFFF
             text-decoration: none
             display: block
@@ -44,37 +98,19 @@ header
             margin: 10px 25px
             text-transform: uppercase
             &:hover
-                color: #00E0D0
-.home
-    height: 470px
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    color: #FFFFFF
-    &__heading
-        font-family: 'PlayfairDisplay Black'
-        color: #FFFFFF
-    &__text
-        font-family: 'Roboto Light'
-        font-size: 14px
-        text-align: center
-        max-width: 55%
-    &__separator
-        margin-top: 20px
-        margin-bottom: 27px      
+                color: #00E0D0                
 .about
     height: 430px
-    width: 100vw
+    width: 100%
     margin: 0 auto
     display: inline-flex
     align-items: center
     justify-content: center
     &__logo
-        width: 30vw
+        width: 30%
     &__text
         height: 260px
-        width: 40vw
+        width: 40%
     h2
         color: #413D4B
         margin-bottom: 20px
@@ -103,7 +139,7 @@ header
         font-size: 16px
 .expertise
     height: 755px
-    width: 80vw
+    width: 80%
     margin: 0 auto
     display: block
     text-align: center
@@ -134,17 +170,16 @@ header
             align-self: center
             margin: 0.2px
         &--item:nth-of-type(1)
-            border-right: 0.2px solid #C8C8C8
-            border-bottom: 0.3px solid #C8C8C8 
+            border-bottom: 0.2px solid #C8C8C8 
         &--item:nth-of-type(2)
             border-right: 0.2px solid #C8C8C8
-            border-bottom: 0.2px solid #C8C8C8 
+            border-bottom: 0.2px solid #C8C8C8
+            border-left: 0.2px solid #C8C8C8 
         &--item:nth-of-type(3)
             border-bottom: 0.2px solid #C8C8C8
-        &--item:nth-of-type(4)
+        &--item:nth-of-type(5)
             border-right: 0.2px solid #C8C8C8
-        &--item:nth-of-type(6)
-            border-left: 0.2px solid #C8C8C8
+            border-left: 0.2px solid #C8C8C8 
         h4
             color: #413D4B
             margin-top: 20px
@@ -203,14 +238,14 @@ header
         font-family: 'Roboto Light'
         font-size: 13px
 .gallery
-    width: 100vw
+    width: 100%
     height: 740px
     display: block
     text-align: center
     padding-top: 50px
     padding-bottom: 40px
     &__heading
-        width: 80vw
+        width: 80%
         display: flex
         align-items: center
         justify-content: space-between
@@ -239,7 +274,7 @@ header
         margin-top: 70px
         margin-bottom: 70px
 .opinions
-    width: 100vw
+    width: 100%
     height: 500px
     display: flex
     flex-direction: column
@@ -251,13 +286,14 @@ header
     &__quote
         margin-bottom: 30px
     &__text
-        width: 55vw
+        width: 55%
         font-family: 'Playfair Display'
         font-size: 16px
         padding-bottom: 10px
         text-align: center
     &__personality
         padding: 25px
+        text-align: center
         h4
             font-family: 'Roboto Black'
             font-size: 14px
@@ -273,16 +309,16 @@ header
             padding: 5px
 .container 
     height: 655px
-    width: 80vw
+    width: 100%
     display: flex
     align-items: center
     justify-items: center
     margin: 0 auto
 .feedback
-    width: 40vw
+    width: 50%
     display: flex
     flex-direction: column
-    margin-right: 100px
+    margin: 0 auto
     &__heading
         font-family: 'PlayfairDisplay Bold'
         font-size: 22px
@@ -318,8 +354,8 @@ header
         font-size: 16px
         text-transform: uppercase
 .clients
-    width: 42vw 
-    margin-top: 10px 
+    width: 35% 
+    margin: 0 auto
     &__heading
         font-family: 'PlayfairDisplay Bold'
         font-size: 22px
@@ -334,53 +370,98 @@ header
         display: inline-flex
         flex-flow: row wrap
         &--item
-            width: 170px
+            width: 190px
             height: 80px
 .contact
     height: 400px
-    width: 100vw
+    width: 100%
     display: flex
-    align-items: center
-    justify-items: center
+    justify-content: center
     background: url('../page images/Footer/background.png')
     background-size: cover
     color: #FFFFFF
+    margin: 0 auto
     &__text
         display: flex
         flex-direction: column
+        justify-content: space-evenly
         width: 30%
         margin: 10px
-        padding: 10px
+        padding-top: 15px
+        padding-left: 30px
+        padding-right: 30px
         img
             width: 130px
         ul 
             display: flex
             flex-direction: row
+            justify-content: space-between
             list-style: none
+        a
+            text-decoration: none
+            text-transform: uppercase
+            color: #FFFFFF
             font-family: 'Roboto Light'
             font-size: 14px
-            text-transform: uppercase
+            cursor: pointer
+            &:hover
+                color: #00E0D0
     &__information
         display: flex
         flex-direction: column
+        justify-content: space-evenly
         width: 30%
         margin: 10px
         padding: 10px
+        padding-left: 30px
+        padding-right: 30px
+        &--heading 
+            width: 100%
         img 
             width: 17px
+        span 
+            margin-left: -20px
     &__subscription
         width: 30%
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
         margin: 10px
-        padding: 10px
+        padding-top: 25px
+        padding-left: 30px
+        padding-right: 30px
+    &__button 
+        display: flex
+        align-items: center
+        cursor: pointer
         input 
             background: transparent
             border: 1px solid #9D97AF
             color: #9D97AF
-            width: 210px
+            width: 208px
+            margin-right: 3px
             height: 45px
             font-family: 'Roboto Light'
             font-size: 14px
             text-align: center
+        &--button 
+            background-color: transparent
+            border: none
+            background: url('./page images/Footer/paper button img.png')
+            background-size: cover
+            height: 45px
+            width: 70px
+        img 
+            height: 38px
+            width: 65px
+            opacity: 0.7
+            cursor: pointer
+.active 
+    button
+        background-color: #00E0D0
+
+            
+
 
             
             
