@@ -5,21 +5,24 @@
 body
     max-width: 1600px
     margin: 0 auto 
-.slider 
-    position: relative
-    &__item
-        display: flex
-        align-items: center
-        justify-content: center
+    .slider 
+        position: relative
         height: 670px
         width: 100%
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center
-        color: #FFFFFF
-        text-align: center
-        img
-            margin: 0 auto
+        &__item
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 670px
+            width: 100%
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            color: #FFFFFF
+            text-align: center
+            img
+                margin: 0 auto               
 .heading, .text
     margin-top: 40px
 .heading 
@@ -35,14 +38,14 @@ body
     margin: 0 auto
     margin-top: 30px
     text-align: center
-.slick-dots 
+.first-slick 
     display: flex
     justify-content: center
     position: absolute
     top: 580px
+    z-index: 1
     left: 45%
     right: 45%
-    z-index: 1
     li
         padding: 5px
         list-style: none
@@ -55,8 +58,8 @@ body
             width: 10px
             height: 10px
             cursor: pointer
-            &:hover
-                background: #00E0D0
+    .slick-active > button
+        background: #00E0D0
 .header__button
     margin: 0 auto
     margin-top: 90px
@@ -274,39 +277,123 @@ body
         margin-top: 70px
         margin-bottom: 70px
 .opinions
+    position: relative
     width: 100%
-    height: 500px
     display: flex
-    flex-direction: column
-    justify-content: center
     align-items: center
-    background: url('../page images/Opinions/background.png')
-    background-size: cover
-    color: #FFFFFF
-    &__quote
-        margin-bottom: 30px
-    &__text
-        width: 55%
-        font-family: 'Playfair Display'
-        font-size: 16px
-        padding-bottom: 10px
-        text-align: center
-    &__personality
-        padding: 25px
-        text-align: center
-        h4
-            font-family: 'Roboto Black'
-            font-size: 14px
-        p 
-            font-family: 'Roboto Light'
-            font-size: 13px
-    &__slider
+    justify-content: center
+    li
+        list-style: none
+    .slick-dots
+        position: absolute
+        width: 250px
+        z-index: 1
+        top: 375px
         display: flex
         align-items: center
-        justify-items: space-around
-        padding-top: 25px
-        img 
-            padding: 5px
+        justify-content: space-between 
+        li:first-child > button
+            background: url('../page images/Opinions/img1.png')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            height: 30px
+            width: 30px
+            border: none
+            font-size: 0 
+        li:last-child > button
+            background: url('../page images/Opinions/img4.png')  
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            height: 30px
+            width: 30px
+        li:nth-of-type(2) > button
+            background: url('../page images/Opinions/img2.png')  
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            height: 30px
+            width: 30px
+        li:nth-of-type(3) > button
+            background: url('../page images/Opinions/main image.png')  
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            height: 30px
+            width: 30px
+        li:nth-of-type(4) > button
+            background: url('../page images/Opinions/img3.png')  
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            height: 30px
+            width: 30px
+        li.slick-active > button
+            height: 50px
+            width: 50px
+        li > button
+            border: none
+            font-size: 0 
+            outline: none
+    &__slider
+        position: relative
+        width: 100%
+        display: inline-flex
+        margin: 0 auto
+        z-index: 2
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        height: 500px
+        width: 100%
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        color: #FFFFFF
+        text-align: center
+        &--quote
+            margin-bottom: 30px
+            margin-top: 50px
+            display: inline-flex
+        &--text
+            width: 55%
+            font-family: 'Playfair Display'
+            font-size: 16px
+            padding-bottom: 10px
+            margin: 0 auto
+            text-align: center
+        &--personality
+            padding: 25px
+            text-align: center
+            h4
+                font-family: 'Roboto Black'
+                font-size: 14px
+            p 
+                font-family: 'Roboto Light'
+                font-size: 13px
+.slick-arrow
+    position: absolute
+    z-index: 1
+    top: 395px
+    border-radius: 50%
+    outline: none
+    height: 20px
+    font-size: 0
+    width: 17px
+    border: none
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    cursor: pointer
+.slick-next
+    left: 65%
+    background: url('../page images/Opinions/next_new.png')
+.slick-prev
+    right: 65%
+    background: url('../page images/Opinions/prev_new.png')
 .container 
     height: 655px
     width: 100%
@@ -456,37 +543,3 @@ body
             width: 65px
             opacity: 0.7
             cursor: pointer
-.active 
-    button
-        background-color: #00E0D0
-
-            
-
-
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        
-
-
-            
-
-
-
-
