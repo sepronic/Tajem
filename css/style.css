@@ -382,7 +382,8 @@ body {
       text-align: center; }
     .opinions__item--personality {
       padding: 25px;
-      text-align: center; }
+      text-align: center;
+      text-transform: uppercase; }
       .opinions__item--personality h4 {
         font-family: "Roboto Black";
         font-size: 14px; }
@@ -419,9 +420,11 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .feedback {
+  position: absolute;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -462,24 +465,33 @@ body {
     text-transform: uppercase; }
 
 .clients {
-  width: 35%;
+  width: 45%;
   margin: 0 auto; }
   .clients__heading {
     font-family: "PlayfairDisplay Bold";
     font-size: 22px;
     color: #413D4B;
-    width: 100%; }
-  .clients h2 {
-    margin-bottom: 30px;
-    margin-top: -50px; }
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    left: 64%; }
   .clients__gallery {
+    position: absolute;
+    top: 85px;
+    left: 55%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     padding-top: 15px;
-    padding-bottom: 15px;
-    display: inline-flex;
-    flex-flow: row wrap; }
+    padding-bottom: 15px; }
     .clients__gallery--item {
-      width: 190px;
-      height: 80px; }
+      width: 45%;
+      height: 80px;
+      margin-bottom: 10px;
+      text-align: center; }
+      .clients__gallery--item img {
+        padding-top: 30px; }
 
 .contact {
   height: 400px;

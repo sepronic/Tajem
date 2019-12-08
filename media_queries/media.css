@@ -1,0 +1,1216 @@
+@media all and (min-width: 320px) and (max-width: 535px) {
+    h2 {
+        font-size: 18px;
+    }
+    .menu {
+        padding-top: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .menu__logo img {       
+        height: 38px;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: absolute;
+        top: 15px;
+        left: 85%;
+        width: 26px;
+        height: 26px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    .menu__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        right: 100%;
+        width: 100px;
+        height: 120px;
+        margin: 0;
+        padding: 10px 270px;
+        list-style: none;
+        text-align: left;
+        background-color: transparent;
+    }
+    .menu__box a {
+        outline: none;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: inline-block;
+        font-family: "Hammersmith One";
+        font-size: 16px;
+        text-transform: uppercase; 
+        cursor: pointer;
+    }
+    .menu__box a:hover {
+        color: #00E0D0; 
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        transition-duration: .25s;
+    }
+    .menu__box {
+        transition-duration: .25s;
+    }
+    .menu__list {
+        opacity: 0;
+    }
+    .text {
+        width: 90%;
+    }
+    .header__button {
+        margin-top: 20px;
+    }
+    .about {
+        margin-top: -45px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .about__logo {
+        display: none;
+    }
+    .about__text {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .about__button {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .video {
+        height: 340px;
+    }
+    .expertise {
+        height: 425px;
+        width: 90%;
+    }
+    .expertise__heading {
+        margin-top: 20px;
+    }
+    .expertise__container {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .expertise__container--item {
+        padding: 0px;
+        padding-top: 15px;
+        height: 125px;
+    }
+    .expertise__container--itemImg {
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+    }
+    .expertise__container--item h4 {
+        font-size: 10px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .expertise__container--item p {
+        display: none;
+    }
+    .team {
+        height: 760px;
+    }
+    .team__heading {
+        margin-top: 25px;
+        text-align: center;
+    }
+    .team__text {
+        text-align: center;
+    }
+    .team .separator {
+        margin-top: 0px;
+    }
+    .team__container {
+        margin-top: 0px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .team__item {
+        width: 35%;
+    }
+    .team span {
+        margin-top: 0px;
+    }
+    .team__button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .gallery {
+        height: 600px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    .gallery__heading {
+        width: 100%;
+        display: block;
+    }
+    .gallery h2 {
+        font-size: 18px;
+        margin: 10px;
+    }
+    .link--items {
+        margin-bottom: 20px;
+    }
+    .gallery__item img {
+        width: 30%;
+        height: 100px;
+    }
+    .gallery__button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .opinions__item--text {
+        width: 90%;
+        font-size: 14px;
+    }
+    .opinions .slick-dots {
+        width: 50%;
+    }
+    .slick-arrow {
+        top: 390px;
+    }
+    .slick-prev {
+        right: 80%;
+    }
+    .slick-next {
+        left: 80%;
+    }
+    .container {
+        width: 100%;
+        height: 1060px;
+    }
+    .feedback {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        top: 10px;
+        border-bottom: 0.2px solid #413D4B;;
+    }
+    .clients__heading {
+        top: 535px;
+        width: 90%;
+        left: 32%;
+        right: 25%;
+    }
+    .clients__gallery {
+        top: 545px;
+        left: 2%;
+    }
+    .clients__gallery--item {
+        width: 40%;
+    }
+    .clients__gallery--item img {
+        margin: 20px;
+        width: 70%;
+        padding: 20px;
+    }
+    .feedback__button {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        display: block;
+        width: 100%;
+        height: 570px;
+    }
+    .contact__text, .contact__information, .contact__subscription {
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .contact__text, .contact__information {
+        margin: 0 auto;
+        border-bottom: 0.2px solid #ffffff;
+    }
+    .contact__text img {
+        margin: 0 auto;
+    }
+    .contact__text p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact__data {
+        margin-top: 20px;
+    }
+    .contact__subscription {
+        padding-top: 0px;
+    }
+    .contact__button {
+        margin: 0 auto;
+    }
+    .contact__button input {
+        width: 180px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (min-width: 536px) and (max-width: 700px) {
+    h2 {
+        font-size: 18px;
+    }
+    .menu {
+        padding-top: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .menu__logo img {       
+        margin-bottom: 20px;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: absolute;
+        top: 15px;
+        left: 85%;
+        width: 26px;
+        height: 26px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    .menu__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        right: 100%;
+        width: 100px;
+        height: 120px;
+        margin: 0;
+        padding: 10px 270px;
+        list-style: none;
+        text-align: left;
+        background-color: transparent;
+    }
+    .menu__box a {
+        outline: none;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: inline-block;
+        font-family: "Hammersmith One";
+        font-size: 16px;
+        text-transform: uppercase; 
+        cursor: pointer;
+    }
+    .menu__box a:hover {
+        color: #00E0D0; 
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        transition-duration: .25s;
+    }
+    .menu__box {
+        transition-duration: .25s;
+    }
+    .menu__list {
+        opacity: 0;
+    }
+    .text {
+        width: 90%;
+    }
+    .header__button {
+        margin-top: 50px;
+    }
+    .about {
+        margin-top: -55px;
+    }
+    .about__logo {
+        width: 45%;
+        margin-top: 55px;
+    }
+    .about__text {
+        margin-left: 15px;
+        width: 55%;
+    } 
+    .about__button {
+        margin-top: 10px;
+    }
+    .video {
+        height: 340px;
+    }
+    .expertise {
+        height: 445px;
+        width: 100%;
+    }
+    .expertise__heading {
+        margin-top: 20px;
+    }
+    .expertise__container {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .expertise__container--item {
+        padding: 0px;
+        padding-top: 10px;
+        height: 155px;
+    }
+    .expertise__container--itemImg {
+        height: 35px;
+        width: 35px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .expertise__container--item h4 {
+        font-size: 10px;
+        margin: 0 auto;
+    }
+    .expertise__container--item p {
+        font-size: 12px;
+    }
+    .team {
+        height: 715px;
+    }
+    .team__heading {
+        margin-top: 25px;
+        text-align: center;
+    }
+    .team__text {
+        text-align: center;
+    }
+    .team .separator {
+        margin-top: 0px;
+    }
+    .team__container {
+        margin-top: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        width: 80%;
+    }
+    .team__item {
+        width: 170px;
+        height: 210px;
+    }
+    .team__item img {
+        width: 100%; 
+        height: 150px;
+    }
+    .team h3 {
+        font-size: 14px; 
+        margin-top: 5px;
+    }
+    .team span {
+        margin-top: 0px;
+    }
+    .team__button {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .gallery {
+        height: 600px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    .gallery__heading {
+        width: 100%;
+        display: block;
+    }
+    .gallery h2 {
+        font-size: 18px;
+        margin: 10px;
+    }
+    .link--items {
+        margin-bottom: 20px;
+    }
+    .gallery__item img {
+        width: 30%;
+        height: 100px;
+    }
+    .gallery__button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .opinions__item--text {
+        width: 90%;
+        font-size: 14px;
+    }
+    .opinions .slick-dots {
+        width: 40%;
+    }
+    .slick-arrow {
+        top: 390px;
+    }
+    .slick-prev {
+        right: 80%;
+    }
+    .slick-next {
+        left: 80%;
+    }
+    .container {
+        width: 100%;
+        height: 655px;
+    }
+    .clients {
+        width: 35%;
+    }
+    .clients__gallery--item {
+        width: 43%;
+    }
+    .clients__gallery--item img {
+        margin: 10px;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .clients__heading {
+        left: 60%;
+    }
+    .feedback__heading, .clients__heading {
+        font-size: 14px;
+    }
+    .feedback__heading {
+        width: 100%;
+    }
+    .feedback {
+        position: absolute;
+        top: 35px;
+        width: 55%;
+    }
+    .feedback__button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        display: block;
+        width: 100%;
+        height: 570px;
+    }
+    .contact__text, .contact__information, .contact__subscription {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+    .contact__text, .contact__information {
+        margin: 0 auto;
+        border-bottom: 0.2px solid #ffffff;
+    }
+    .contact__text img {
+        margin: 0 auto;
+    }
+    .contact__text p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact__data {
+        margin-top: 20px;
+    }
+    .contact__subscription {
+        padding-top: 0px;
+    }
+    .contact__button {
+        margin: 0 auto;
+    }
+    .contact__button input {
+        width: 180px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (min-width: 701px) and (max-width: 870px) {
+    h2 {
+        font-size: 18px;
+    }
+    .menu {
+        padding-top: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .menu__logo img {       
+        margin-bottom: 20px;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: absolute;
+        top: 15px;
+        left: 85%;
+        width: 26px;
+        height: 26px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    .menu__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        right: 100%;
+        width: 100px;
+        height: 120px;
+        margin: 0;
+        padding: 10px 470px;
+        list-style: none;
+        text-align: left;
+        background-color: transparent;
+    }
+    .menu__box a {
+        outline: none;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: inline-block;
+        font-family: "Hammersmith One";
+        font-size: 16px;
+        text-transform: uppercase; 
+        cursor: pointer;
+    }
+    .menu__box a:hover {
+        color: #00E0D0; 
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        transition-duration: .25s;
+    }
+    .menu__box {
+        transition-duration: .25s;
+    }
+    .menu__list {
+        opacity: 0;
+    }
+    .text {
+        width: 90%;
+    }
+    .header__button {
+        margin-top: 50px;
+    }
+    .about {
+        margin-top: -55px;
+    }
+    .about__logo {
+        width: 35%;
+        margin-top: 55px;
+    }
+    .about__text {
+        margin-left: 15px;
+        width: 55%;
+    } 
+    .about__button {
+        margin-top: 10px;
+    }
+    .video {
+        height: 340px;
+    }
+    .expertise {
+        height: 445px;
+        width: 100%;
+    }
+    .expertise__heading {
+        margin-top: 20px;
+    }
+    .expertise__container {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .expertise__container--item {
+        padding: 0px;
+        padding-top: 10px;
+        height: 155px;
+    }
+    .expertise__container--itemImg {
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .expertise__container--item h4 {
+        font-size: 10px;
+        margin: 0 auto;
+    }
+    .expertise__container--item p {
+        font-size: 12px;
+    }
+    .team {
+        height: 655px;
+    }
+    .team__heading {
+        margin-top: 25px;
+        text-align: center;
+    }
+    .team__text {
+        text-align: center;
+    }
+    .team .separator {
+        margin-top: 0px;
+    }
+    .team__container {
+        margin-top: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        width: 80%;
+    }
+    .team__item {
+        width: 30%;
+        height: 200px;
+    }
+    .team__item img {
+        width: 100%; 
+        height: 140px;
+    }
+    .team h3 {
+        font-size: 14px; 
+        margin-top: 5px;
+    }
+    .team span {
+        margin-top: 0px;
+    }
+    .team__button {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .gallery {
+        height: 600px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    .gallery__heading {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .link--items {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .gallery h2 {
+        font-size: 18px;
+        margin: 10px;
+    }
+    .gallery__item img {
+        width: 24%;
+        height: 100px;
+    }
+    .gallery__button {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .opinions__item--text {
+        width: 90%;
+        font-size: 14px;
+    }
+    .opinions .slick-dots {
+        width: 40%;
+    }
+    .slick-arrow {
+        top: 390px;
+    }
+    .slick-prev {
+        right: 80%;
+    }
+    .slick-next {
+        left: 80%;
+    }
+    .container {
+        width: 100%;
+        height: 655px;
+    }
+    .clients {
+        width: 35%;
+    }
+    .clients__gallery--item {
+        width: 43%;
+    }
+    .clients__gallery--item img {
+        margin: 10px;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .clients__heading {
+        left: 60%;
+    }
+    .feedback__heading, .clients__heading {
+        font-size: 14px;
+    }
+    .feedback__heading {
+        width: 100%;
+    }
+    .feedback {
+        position: absolute;
+        top: 35px;
+        width: 55%;
+    }
+    .feedback__button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        width: 100%;
+        height: 530px;
+    }
+    .contact__text, .contact__information, .contact__subscription {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+    .contact__text, .contact__information {
+        margin: 0 auto;
+        border-bottom: 0.2px solid #ffffff;
+    }
+    .contact__text img {
+        margin: 0 auto;
+    }
+    .contact__text p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact__data {
+        margin-top: 20px;
+    }
+    .contact__subscription {
+        padding-top: 0px;
+    }
+    .contact__button {
+        margin: 0 auto;
+    }
+    .contact__button input {
+        width: 180px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .expertise__container--itemImg {
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+    }
+    .contact__subscription {
+        margin-top: 10px;
+        padding-top: 33px;
+    }
+}
+
+@media all and (min-width: 871px) and (max-width: 1000px) {
+    h2 {
+        font-size: 18px;
+    }
+    .menu {
+        padding-top: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .menu__logo img {       
+        margin-bottom: 20px;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: absolute;
+        top: 15px;
+        left: 85%;
+        width: 26px;
+        height: 26px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    .menu__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        right: 100%;
+        width: 100px;
+        height: 120px;
+        margin: 0;
+        padding: 10px 670px;
+        list-style: none;
+        text-align: left;
+        background-color: transparent;
+    }
+    .menu__box a {
+        outline: none;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: inline-block;
+        font-family: "Hammersmith One";
+        font-size: 16px;
+        text-transform: uppercase; 
+        cursor: pointer;
+    }
+    .menu__box a:hover {
+        color: #00E0D0; 
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        transition-duration: .25s;
+    }
+    .menu__box {
+        transition-duration: .25s;
+    }
+    .menu__list {
+        opacity: 0;
+    }
+    .text {
+        width: 90%;
+    }
+    .header__button {
+        margin-top: 50px;
+    }
+    .about {
+        margin-top: -55px;
+    }
+    .about__logo {
+        width: 35%;
+        margin-top: 55px;
+    }
+    .about__text {
+        margin-left: 15px;
+        width: 50%;
+    } 
+    .about__button {
+        margin-top: 20px;
+    }
+    .video {
+        height: 340px;
+    }
+    .expertise {
+        height: 445px;
+        width: 100%;
+    }
+    .expertise__heading {
+        margin-top: 20px;
+    }
+    .expertise__container {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .expertise__container--item {
+        padding: 0px;
+        padding-top: 10px;
+        height: 155px;
+    }
+    .expertise__container--itemImg {
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .expertise__container--item h4 {
+        font-size: 10px;
+        margin: 0 auto;
+    }
+    .expertise__container--item p {
+        font-size: 12px;
+    }
+    .team {
+        height: 615px;
+    }
+    .team__heading {
+        margin-top: 25px;
+        text-align: center;
+    }
+    .team__text {
+        text-align: center;
+    }
+    .team .separator {
+        margin-top: 0px;
+    }
+    .team__container {
+        margin-top: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    .team__item {
+        width: 140px;
+        height: 210px;
+    }
+    .team__item img {
+        width: 100%; 
+        height: 150px;
+    }
+    .team h3 {
+        font-size: 14px; 
+        margin-top: 5px;
+    }
+    .team span {
+        margin-top: 0px;
+    }
+    .team__button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .gallery {
+        height: 450px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    .gallery__heading {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .link--items {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .gallery h2 {
+        font-size: 18px;
+        margin: 10px;
+    }
+    .gallery__item img {
+        width: 15%;
+        height: 100px;
+    }
+    .gallery__button {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .opinions__item--text {
+        width: 60%;
+        font-size: 14px;
+    }
+    .opinions .slick-dots {
+        width: 40%;
+    }
+    .slick-arrow {
+        top: 390px;
+    }
+    .slick-prev {
+        right: 75%;
+    }
+    .slick-next {
+        left: 75%;
+    }
+    .container {
+        width: 100%;
+        height: 655px;
+    }
+    .clients {
+        width: 35%;
+    }
+    .clients__gallery--item {
+        width: 43%;
+        margin-bottom: 20px;
+    }
+    .clients__gallery--item img {
+        margin: 10px;
+        width: 80%;
+        padding-top: 20px;
+    }
+    .clients__heading {
+        left: 62%;
+    }
+    .feedback__heading, .clients__heading {
+        font-size: 14px;
+    }
+    .feedback__heading {
+        width: 100%;
+    }
+    .feedback {
+        position: absolute;
+        top: 35px;
+        width: 55%;
+    }
+    .feedback__button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        width: 100%;
+        height: 530px;
+    }
+    .contact__text, .contact__information, .contact__subscription {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+    .contact__text, .contact__information {
+        margin: 0 auto;
+        border-bottom: 0.2px solid #ffffff;
+    }
+    .contact__text img {
+        margin: 0 auto;
+    }
+    .contact__text p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact__data {
+        margin-top: 20px;
+    }
+    .contact__subscription {
+        padding-top: 0px;
+    }
+    .contact__button {
+        margin: 0 auto;
+    }
+    .contact__button input {
+        width: 180px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .expertise__container--itemImg {
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+    }
+    .contact__subscription {
+        margin-top: 10px;
+        padding-top: 33px;
+    }
+}
+
+@media all and (min-width: 1001px) {
+    .hamburger__menu {
+        opacity: 0;
+    }
+    .expertise__container--itemImg {
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+    }
+    .contact__subscription {
+        margin-top: 10px;
+        padding-top: 35px;
+    }
+}

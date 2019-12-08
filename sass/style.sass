@@ -368,6 +368,7 @@ body
         &--personality
             padding: 25px
             text-align: center
+            text-transform: uppercase
             h4
                 font-family: 'Roboto Black'
                 font-size: 14px
@@ -394,6 +395,7 @@ body
 .slick-prev
     right: 65%
     background: url('../page images/Opinions/prev_new.png')
+
 .container 
     height: 655px
     width: 100%
@@ -401,7 +403,9 @@ body
     align-items: center
     justify-items: center
     margin: 0 auto
+    position: relative
 .feedback
+    position: absolute
     width: 50%
     display: flex
     flex-direction: column
@@ -441,24 +445,34 @@ body
         font-size: 16px
         text-transform: uppercase
 .clients
-    width: 35% 
+    width: 45% 
     margin: 0 auto
     &__heading
         font-family: 'PlayfairDisplay Bold'
         font-size: 22px
         color: #413D4B
         width: 100%
-    h2 
-        margin-bottom: 30px
-        margin-top: -50px
+        position: absolute
+        top: 55px
+        left: 64%
     &__gallery
+        position: absolute
+        top: 85px
+        left: 55%
+        display: flex
+        flex-flow: row wrap
+        justify-content: center
+        align-items: center
         padding-top: 15px
         padding-bottom: 15px
-        display: inline-flex
-        flex-flow: row wrap
         &--item
-            width: 190px
+            width: 45%
             height: 80px
+            margin-bottom: 10px
+            text-align: center
+            img 
+                padding-top: 30px
+
 .contact
     height: 400px
     width: 100%
@@ -543,3 +557,6 @@ body
             width: 65px
             opacity: 0.7
             cursor: pointer
+
+
+        
