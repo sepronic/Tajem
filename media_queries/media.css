@@ -52,7 +52,7 @@
         width: 100px;
         height: 120px;
         margin: 0;
-        padding: 10px 270px;
+        padding: 10px 220px;
         list-style: none;
         text-align: left;
         background-color: transparent;
@@ -227,7 +227,6 @@
         margin: 0 auto;
         text-align: center;
         top: 10px;
-        border-bottom: 0.2px solid #413D4B;;
     }
     .clients__heading {
         top: 535px;
@@ -1203,6 +1202,12 @@
 @media all and (min-width: 1001px) {
     .hamburger__menu {
         opacity: 0;
+    }
+    .menu__list a {
+        margin: 15px;
+    }
+    .menu__list a:hover {
+        color: #00E0D0;
     }
     .expertise__container--itemImg {
         height: 50px;
