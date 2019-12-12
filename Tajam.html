@@ -11,152 +11,110 @@
 <body>
     <header>
         <div class="hamburger__menu">
-                <input id="menu__toggle" type="checkbox">
-                <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                </label>
-                <ul class="menu__box">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Expertise</a></li>
-                    <li><a href="">Teams</a></li>
-                    <li><a href="">Works</a></li>
-                    <li><a href="">People Say</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a href="#slider" onclick="hide()">Home</a></li>
+                <li><a href="#about" onclick="hide()">About</a></li>
+                <li><a href="#expertise" onclick="hide()">Expertise</a></li>
+                <li><a href="#team" onclick="hide()">Team</a></li>
+                <li><a href="#gallery" onclick="hide()">Works</a></li>
+                <li><a href="#opinions" onclick="hide()">People Say</a></li>
+                <li><a href="#contact" onclick="hide()">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu__logo">
+                <img src="./page images/header menu/tajam_logo.png" alt="tajam logo">
             </div>
-        <div class="slider">
-                <div class="slider__item" style="background: url('./page images/header menu/background.png')">
-                    <div class="menu">
-                        <div class="menu__logo">
-                            <img src="./page images/header menu/tajam_logo.png" alt="tajam logo">
-                        </div>
-                        <ul class="menu__list">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Expertise</a></li>
-                            <li><a href="">Teams</a></li>
-                            <li><a href="">Works</a></li>
-                            <li><a href="">People Say</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="heading">
-                        <h1>We Are Awesome Creative Agency</h1>
-                    </div>
-                    <div class="separator">
-                        <img src="./page images/header menu/Separator.png" alt="separator">
-                    </div>
-                    <div class="text">
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-                    </div>
-                    <div class="header__button button_style">
-                        <a href="#">
-                            <div>
-                                Learn more
-                            </div>
-                        </a>
-                    </div>
+        <div class="menu">
+            <ul class="menu__list">
+                <li><a href="#slider">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#gallery">Works</a></li>
+                <li><a href="#opinions">People Say</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="slider" id="slider">
+            <div class="slider__item" style="background: url('./page images/header menu/background.png')">
+                <div class="heading">
+                    <h1>We Are Awesome Creative Agency</h1>
                 </div>
-                <div class="slider__item" style="background: url('./page images/header menu/background.png')">
-                    <div class="menu">
-                        <div class="menu__logo">
-                            <img src="./page images/header menu/tajam_logo.png" alt="tajam logo">
-                        </div>
-                        <ul class="menu__list">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Expertise</a></li>
-                            <li><a href="">Teams</a></li>
-                            <li><a href="">Works</a></li>
-                            <li><a href="">People Say</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="heading">
-                        <h1>Our Designs Help To Succeed</h1>
-                    </div>
-                    <div class="separator">
-                        <img src="./page images/header menu/Separator.png" alt="separator">
-                    </div>
-                    <div class="text">
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-                    </div>
-                    <div class="header__button button_style">
-                        <a href="#">
-                            <div>
-                                Learn more
-                            </div>
-                        </a>
-                    </div>
+                <div class="separator">
+                    <img src="./page images/header menu/Separator.png" alt="separator">
                 </div>
-                <div class="slider__item" style="background: url('./page images/header menu/background.png')">
-                    <div class="menu">
-                        <div class="menu__logo">
-                            <img src="./page images/header menu/tajam_logo.png" alt="tajam logo">
-                        </div>
-                        <ul class="menu__list">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Expertise</a></li>
-                            <li><a href="">Teams</a></li>
-                            <li><a href="">Works</a></li>
-                            <li><a href="">People Say</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="heading">
-                        <h1>We Have So Much To Offer</h1>
-                    </div>
-                    <div class="separator">
-                        <img src="./page images/header menu/Separator.png" alt="separator">
-                    </div>
-                    <div class="text">
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-                    </div>
-                    <div class="header__button button_style">
-                        <a href="#">
-                            <div>
-                                Learn more
-                            </div>
-                        </a>
-                    </div>
+                <div class="text">
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
                 </div>
-                <div class="slider__item" style="background: url('./page images/header menu/background.png')">
-                    <div class="menu">
-                        <div class="menu__logo">
-                            <img src="./page images/header menu/tajam_logo.png" alt="tajam logo">
+                <div class="header__button button_style">
+                    <a href="#feedback">
+                        <div>
+                            Learn more
                         </div>
-                        <ul class="menu__list">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Expertise</a></li>
-                            <li><a href="">Teams</a></li>
-                            <li><a href="">Works</a></li>
-                            <li><a href="">People Say</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="heading">
-                        <h1>Become Our Partner Today</h1>
-                    </div>
-                    <div class="separator">
-                        <img src="./page images/header menu/Separator.png" alt="separator">
-                    </div>
-                    <div class="text">
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-                    </div>
-                    <div class="header__button button_style">
-                        <a href="#">
-                            <div>
-                                Learn more
-                            </div>
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
+            <div class="slider__item" style="background: url('./page images/header menu/background.png')">
+                <div class="heading">
+                    <h1>Our Designs Help To Succeed</h1>
+                </div>
+                <div class="separator">
+                    <img src="./page images/header menu/Separator.png" alt="separator">
+                </div>
+                <div class="text">
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                </div>
+                <div class="header__button button_style">
+                    <a href="#feedback">
+                        <div>
+                            Learn more
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="slider__item" style="background: url('./page images/header menu/background.png')">
+                <div class="heading">
+                    <h1>We Have So Much To Offer</h1>
+                </div>
+                <div class="separator">
+                    <img src="./page images/header menu/Separator.png" alt="separator">
+                </div>
+                <div class="text">
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                </div>
+                <div class="header__button button_style">
+                    <a href="#feedback">
+                        <div>
+                            Learn more
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="slider__item" style="background: url('./page images/header menu/background.png')">
+                <div class="heading">
+                    <h1>Become Our Partner Today</h1>
+                </div>
+                <div class="separator">
+                    <img src="./page images/header menu/Separator.png" alt="separator">
+                </div>
+                <div class="text">
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                </div>
+                <div class="header__button button_style">
+                    <a href="#feedback">
+                        <div>
+                            Learn more
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
-    <div class="about">
+    <div class="about" id="about">
         <div class="about__logo">
             <img src="./page images/About/logo.png" alt="logo">
         </div>
@@ -165,7 +123,7 @@
             <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
             <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
         <div class="about__button button_style">
-            <a href="#">
+            <a href="#video">
                 <div>
                     Learn more
                 </div>
@@ -173,15 +131,16 @@
         </div>
     </div>
     </div>
-    <div class="video">
+    <div class="video" id="video">
+        <iframe id="video__play" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiP4kQyzcm8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="video__button">
             <img src="./page images/About/about_video/play button.png" alt="play_button">
-        </div>
-        <div class="video__text">
-            <p>Watch Our Story</p> 
+            <div class="video__text">
+                <p>Watch Our Story</p> 
+            </div>
         </div>
     </div>
-    <div class="expertise">
+    <div class="expertise" id="expertise">
         <div class="expertise__heading">
             <h2>EXPERTISE</h2>
         </div>
@@ -224,7 +183,7 @@
             </div>
         </div>
     </div>
-    <div class="team">
+    <div class="team" id="team">
         <div class="team__heading">
             <h2>MEET OUR AMAZING TEAM</h2>
         </div>
@@ -282,17 +241,17 @@
         </div>
         <span>Become part of our dream team, let’s join us ! </span>
         <div class="team__button button_style">
-            <a href="#">
+            <a href="#contact">
                 <div>
                     We Are Hiring
                 </div>
             </a>
         </div>
     </div>
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <div class="gallery__heading">
             <h2>Our Works</h2>
-            <a href="#">
+            <a href="https://dribbble.com/" target="_blank">
                 <div class="link--items">
                     <span>See All Project in dribbble</span>
                     <img src="./page images/Works/nav_right_link.png" alt="forward">
@@ -313,7 +272,7 @@
             <img src="./page images/Works/image2.png" alt="work_sample">
             <img src="./page images/Works/image.png" alt="work_sample">
             <div class="gallery__button button_style">
-                <a href="#">
+                <a href="https://www.instagram.com/?hl=uk" target="_blank">
                     <div>                        
                         Load More
                     </div>
@@ -321,7 +280,7 @@
             </div> 
         </div>
     </div>
-    <div class="opinions">
+    <div class="opinions" id="opinions">
         <div class="opinions__item" style="background-image: url('./page images/Opinions/background.png')">
             <div class="opinions__item--quote">
                 <img src="./page images/Opinions/quotation mark.png" alt="quotation">
@@ -383,7 +342,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" id="feedback">
         <div class="feedback">
         <div class="feedback__heading">
             <h2>GIVE US A GOOD NEWS</h2>
@@ -417,7 +376,7 @@
     </div>
     </div>
     <footer>
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="contact__text">
                 <img src="./page images/header menu/tajam_logo.png" alt="logo">
                 <p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
@@ -443,12 +402,12 @@
                     <div><button type="submit"><img src="./page images/Footer/paper button img.png" alt=""></button></div>
                 </div>
                 <div class="contact__socialMedia">
-                    <img src="./page images/Footer/social media/facebook.png" alt="facebook">
-                    <img src="./page images/Footer/social media/twitter.png" alt="twitter">
-                    <img src="./page images/Footer/social media/dribbble.png" alt="dribble">
-                    <img src="./page images/Footer/social media/instagram.png" alt="instagram">
-                    <img src="./page images/Footer/social media/google_plus.png" alt="google+">
-                    <img src="./page images/Footer/social media/youtube.png" alt="youtube">
+                    <div><a href="https://www.facebook.com/" target="_blank"><img src="./page images/Footer/social media/facebook.png" alt="facebook"></a></div>
+                    <div><a href="https://twitter.com/?lang=uk" target="_blank"><img src="./page images/Footer/social media/twitter.png" alt="twitter"></a></div>
+                    <div><a href="https://dribbble.com/" target="_blank"><img src="./page images/Footer/social media/dribbble.png" alt="dribble"></a></div>
+                    <div><a href="https://www.instagram.com/?hl=uk" target="_blank"><img src="./page images/Footer/social media/instagram.png" alt="instagram"></a></div>
+                    <div><a href="https://plus.google.com/" target="_blank"><img src="./page images/Footer/social media/google_plus.png" alt="google+"></a></div>
+                    <div><a href="https://www.youtube.com/" target="_blank"><img src="./page images/Footer/social media/youtube.png" alt="youtube"></a></div>
                 </div>
                 <div class="contact__copyright">
                     <img src="./page images/Footer/Copyright  - Tajem Creative.png" alt="copyright">

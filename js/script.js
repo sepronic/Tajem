@@ -18,6 +18,12 @@ $(document).ready(function() {
         dots: true,
         fade: true,
     });
+
+    $('.video__button').on('click', function() {
+        $(this).toggleClass('hide');
+        $('#video__play').toggleClass('show');
+    }); 
 });
 
+ 
 
