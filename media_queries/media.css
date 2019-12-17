@@ -306,6 +306,9 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .contact__socialMedia {
+        margin-bottom: 15px;
+    }
     #video__play {
         width: 320px;
         height: 210px;
@@ -623,6 +626,9 @@
         width: 180px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .contact__socialMedia {
+        margin-bottom: 15px;
     }
 }
 
